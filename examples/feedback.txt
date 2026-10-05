@@ -1,0 +1,4 @@
+# Feedback loop example
+# Migration can cause conflict, and conflict causes more migration (a cycle).
+MIGRATION ->(slow)[E] CONFLICT
+CONFLICT ->(fast)[E] MIGRATION

@@ -1,0 +1,14 @@
+{
+  "factors": [
+    { "code": "CLIMATE",         "name": "Climate Change",        "domain": "Environment" },
+    { "code": "FOOD",            "name": "Food Security",         "domain": "Society" },
+    { "code": "MIGRATION",       "name": "Human Migration",       "domain": "Society" },
+    { "code": "CONFLICT",        "name": "Armed Conflict",        "domain": "Governance" },
+    { "code": "HEALTH",          "name": "Public Health",         "domain": "Health" },
+    { "code": "FINANCE",         "name": "Financial Markets",     "domain": "Economy" },
+    { "code": "BANKING",         "name": "Banking System",        "domain": "Economy" },
+    { "code": "LIQUIDITY",       "name": "Market Liquidity",      "domain": "Economy" },
+    { "code": "MONETARY_POLICY", "name": "Monetary Policy",       "domain": "Economy" },
+    { "code": "SUPPLY_CHAIN",    "name": "Global Supply Chains",  "domain": "Economy" }
+  ]
+}
