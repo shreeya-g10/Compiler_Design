@@ -1,0 +1,19 @@
+# Error examples - every line below is broken on purpose.
+
+# ERROR: missing arrow "->" between the two factors
+CLIMATE FOOD
+
+# ERROR: missing destination factor after the arrow
+CLIMATE ->
+
+# ERROR: missing source factor before the arrow
+-> MIGRATION
+
+# ERROR: unknown factors (not defined in factors.json)
+AIR_CONDITIONER -> FAN
+
+# ERROR: invalid speed (only fast or slow allowed)
+CLIMATE ->(medium)[F] HEALTH
+
+# ERROR: invalid evidence code (only F, E or M allowed)
+BANKING ->(fast)[X] FINANCE

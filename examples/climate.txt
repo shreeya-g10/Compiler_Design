@@ -1,0 +1,5 @@
+# Climate cascade example
+# Climate change affects food and migration; migration can lead to conflict.
+CLIMATE ->(slow)[M] FOOD
+CLIMATE ->(fast)[F] MIGRATION
+MIGRATION ->(slow)[E] CONFLICT

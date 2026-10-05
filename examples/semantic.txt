@@ -1,0 +1,23 @@
+# Semantic test cases - every line is grammatically correct,
+# but some have problems with their MEANING.
+
+# OK: fully correct line (matches the evidence base exactly)
+CLIMATE ->(slow)[M] FOOD
+
+# ERROR: unknown factors (not in factors.json)
+AIR_CONDITIONER -> FAN
+
+# ERROR: self-loop (a factor pointing to itself)
+CLIMATE -> CLIMATE
+
+# WARNING: both factors exist, but this relationship is undocumented
+HEALTH -> BANKING
+
+# WARNING: wrong speed and evidence (evidence base says (slow)[E])
+CLIMATE ->(fast)[F] HEALTH
+
+# OK: speed and evidence left blank (filled in from the evidence base)
+MIGRATION -> CONFLICT
+
+# WARNING: duplicate of the line above
+MIGRATION ->(slow)[E] CONFLICT

@@ -1,0 +1,14 @@
+{
+  "edges": [
+    { "source": "CLIMATE",         "destination": "FOOD",         "mechanism": "shock",           "velocity": "slow", "evidence": "M" },
+    { "source": "CLIMATE",         "destination": "MIGRATION",    "mechanism": "shock",           "velocity": "fast", "evidence": "F" },
+    { "source": "CLIMATE",         "destination": "HEALTH",       "mechanism": "direct_transfer", "velocity": "slow", "evidence": "E" },
+    { "source": "CLIMATE",         "destination": "SUPPLY_CHAIN", "mechanism": "shock",           "velocity": "slow", "evidence": "E" },
+    { "source": "MIGRATION",       "destination": "CONFLICT",     "mechanism": "direct_transfer", "velocity": "slow", "evidence": "E" },
+    { "source": "CONFLICT",        "destination": "MIGRATION",    "mechanism": "feedback",        "velocity": "fast", "evidence": "E" },
+    { "source": "MONETARY_POLICY", "destination": "LIQUIDITY",    "mechanism": "direct_transfer", "velocity": "fast", "evidence": "F" },
+    { "source": "LIQUIDITY",       "destination": "BANKING",      "mechanism": "direct_transfer", "velocity": "fast", "evidence": "F" },
+    { "source": "BANKING",         "destination": "FINANCE",      "mechanism": "direct_transfer", "velocity": "fast", "evidence": "F" },
+    { "source": "SUPPLY_CHAIN",    "destination": "FINANCE",      "mechanism": "direct_transfer", "velocity": "slow", "evidence": "M" }
+  ]
+}

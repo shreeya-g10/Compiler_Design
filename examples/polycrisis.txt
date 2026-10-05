@@ -1,0 +1,17 @@
+# Polycrisis example - climate and finance risks combined.
+# Demonstrates:
+#   - a CONVERGENCE point: FINANCE is reached from both SUPPLY_CHAIN and BANKING
+#   - a FEEDBACK LOOP: MIGRATION -> CONFLICT -> MIGRATION
+# Every edge here exists in evidence_base.json.
+
+# Climate branch
+CLIMATE ->(fast)[F] MIGRATION
+MIGRATION ->(slow)[E] CONFLICT
+CONFLICT ->(fast)[E] MIGRATION
+CLIMATE ->(slow)[E] SUPPLY_CHAIN
+SUPPLY_CHAIN ->(slow)[M] FINANCE
+
+# Finance branch
+MONETARY_POLICY ->(fast)[F] LIQUIDITY
+LIQUIDITY ->(fast)[F] BANKING
+BANKING ->(fast)[F] FINANCE
