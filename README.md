@@ -49,6 +49,24 @@ The graph picture is saved in `output/` and named after the input file
 
 Each phase can also be run on its own, e.g. `venv/bin/python lexer.py examples/climate.txt`.
 
+## Run the UI
+
+A web interface (built with Streamlit) for demos:
+
+```bash
+venv/bin/streamlit run app.py
+```
+
+It opens in your browser at http://localhost:8501. In the UI you can:
+
+- load any example from the **Demo templates** dropdown in the sidebar,
+- type a program in the **Code editor**, or build lines with the **Relationship builder**
+  (pick factors, speed and evidence, then "Add relationship"),
+- press **Compile** and look at each phase in its own tab:
+  Tokens → Parse / IR → Semantic → Graph → Analysis.
+
+Stop the server with `Ctrl+C` in the terminal.
+
 ## Example Files
 
 | File                       | What it shows                                                         |
@@ -98,4 +116,5 @@ Each phase can also be run on its own, e.g. `venv/bin/python lexer.py examples/c
 | `graph_builder.py` | Code generation (IR → graph)                    |
 | `analyzer.py`      | Analysis / optimisation phase                   |
 | `main.py`          | Compiler driver (runs all phases)               |
+| `app.py`           | Web UI for the compiler (Streamlit)             |
 | `examples/`        | Test input programs (incl. error cases)         |
